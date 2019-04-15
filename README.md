@@ -1,6 +1,6 @@
 # Smalltalk
 
-Smalltalk is a bash program which uses Dialogflow in order to become a chatbot in the terminal without the use of python. You just need to run the program and it will create a prompt where you can type
+Smalltalk is a bash program which tries to use python and bash scripts in order to become a chatbot in the terminal . You just need to run the program and it will create a prompt where you can type
 
 ## Prerequisites
 
