@@ -1,1 +1,1 @@
-alias push=./push.sh
+alias push="./push.sh"
