@@ -17,7 +17,7 @@ Remove the stupid .profile file it won't go away with git ignore >:c
     - [x] help()
     - [x] exit()
     - [x] version()
-- [ ] create basic interface with dialogflow
+- [x] create basic interface with dialogflow
 - [ ] add checks for specific intents
 - [ ] execute code based on parameters from events
     - [ ] get request to Dialogflow project API
