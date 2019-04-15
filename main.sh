@@ -24,5 +24,8 @@ else
     then
         ./scripts/help.sh
         keep
+    elif [[ "$input" == "exit()" ]];
+    then
+        echo "Leaving Smalltalk. Goodbye"
     fi
 fi
