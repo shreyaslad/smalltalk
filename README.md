@@ -8,6 +8,8 @@ Install [jq](https://stedolan.github.io/jq/download/) for your OS
 
 Know how to run bash scripts on your OS
 
+Remove the stupid .profile file it won't go away with git ignore >:c
+
 ## Development Status
 
 - [x] create infinite prompt
