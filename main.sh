@@ -27,5 +27,9 @@ else
     elif [[ "$input" == "exit()" ]];
     then
         echo "Leaving Smalltalk. Goodbye"
+    elif [[ "$input" == "version()" ]];
+    then
+        ./scripts/version.sh
+        keep
     fi
 fi
