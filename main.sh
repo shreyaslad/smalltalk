@@ -6,6 +6,8 @@ main () {
         echo "You may not leave these fields blank. If you are unsure of what to do, type help()"
         main
     else
+        echo -n "" > ./chatbot/data/input.json
+        echo "{ \"input\": \"$input\" }" >> ./chatbot/data/input.json
         if [[ "$input" == "help()" ]];
         then
             ./scripts/help.sh
