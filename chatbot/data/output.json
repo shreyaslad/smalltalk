@@ -1,0 +1,22 @@
+{
+  "input": "What's the weather for sf?", 
+  "slots": [
+    {
+      "slotName": "city", 
+      "range": {
+        "start": 23, 
+        "end": 25
+      }, 
+      "rawValue": "sf", 
+      "value": {
+        "kind": "Custom", 
+        "value": "San Francisco"
+      }, 
+      "entity": "city"
+    }
+  ], 
+  "intent": {
+    "intentName": "weather", 
+    "probability": 0.85285922816151
+  }
+}

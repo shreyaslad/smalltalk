@@ -1,0 +1,37 @@
+# weather intent
+---
+type: intent
+name:  weather
+slots:
+  - name: city
+    entity: city
+  - name: state
+    entity: state
+utterances:
+  - Show me the weather for [city](Dublin), [state](California)
+  - weather for [city]Dublin [state](CA)
+  - Tell me the weather for [city](San Francisco)
+  - weather for [city](sf)
+  - I want the weather for [city](portland) [state](oregon)
+  - Can you tell me the weather for [city](denver) [state](co)?
+
+#city entity
+---
+type: entity
+name: city
+automatically_extensible: no
+values:
+- dublin
+- [San Francisco, sf, SF, Sf, san francisco]
+- portland
+- denver
+
+#state entity
+---
+type: entity
+name: state
+automatically_extensible: no
+values:
+- [California, california, CA, ca]
+- [Oregon, OR, oregon]
+- [Colorado, CO, colorado]
