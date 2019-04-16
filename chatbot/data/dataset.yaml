@@ -17,6 +17,7 @@ utterances:
   - weather for [city](sf)
   - I want the weather for [city](portland) [state](oregon)
   - Can you tell me the weather for [city](denver) [state](co)?
+  - what's the weather in [city](denver) [state](colorado)?
 
 #city entity
 ---

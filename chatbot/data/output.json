@@ -1,22 +1,22 @@
 {
-  "input": "What's the weather for sf?", 
+  "input": "what's the weather in dublin ca?", 
   "slots": [
     {
-      "slotName": "city", 
+      "slotName": "state", 
       "range": {
-        "start": 23, 
-        "end": 25
+        "start": 29, 
+        "end": 31
       }, 
-      "rawValue": "sf", 
+      "rawValue": "ca", 
       "value": {
         "kind": "Custom", 
-        "value": "San Francisco"
+        "value": "California"
       }, 
-      "entity": "city"
+      "entity": "state"
     }
   ], 
   "intent": {
     "intentName": "weather", 
-    "probability": 0.85285922816151
+    "probability": 0.8760557171534977
   }
 }

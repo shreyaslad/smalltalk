@@ -8,6 +8,7 @@ main () {
     else
         echo -n "" > ./chatbot/data/input.json
         echo "{ \"input\": \"$input\" }" >> ./chatbot/data/input.json
+        #can call python ./chatbot/main.py here
         if [[ "$input" == "help()" ]];
         then
             ./scripts/help.sh

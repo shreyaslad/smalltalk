@@ -34,12 +34,12 @@ That's all! Typing in `./main` will bring up a prompt. You can exit this prompt 
 - [x] Training
     - [x] create training dataset for intents (may split up into different files)
     - [x] sync dataset to python code
-- [ ] Working with Data
-    - [ ] transfer utterance to a file
-    - [ ] read utterance from file
-    - [ ] shift utterance to python code
-    - [ ] make prediction in python (can run from bash)
-    - [ ] shift data to file
+- [x] Working with Data
+    - [x] transfer utterance to a file
+    - [x] read utterance from file
+    - [x] shift utterance to python code
+    - [x] make prediction in python (can run from bash)
+    - [x] shift data to file
 - [ ] Actually doing something
     - [ ] read from file
     - [ ] check intent and all entities
