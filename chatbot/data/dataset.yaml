@@ -7,6 +7,9 @@ slots:
     entity: city
   - name: state
     entity: state
+  #Removed until proper bash integration
+  #- name: time
+  #  entity: snips/datetime
 utterances:
   - Show me the weather for [city](Dublin), [state](California)
   - weather for [city]Dublin [state](CA)
