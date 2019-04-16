@@ -1,22 +1,22 @@
 {
-  "input": "tell me the weather in denver", 
+  "input": "weather in denver colorado", 
   "slots": [
     {
-      "slotName": "city", 
+      "slotName": "state", 
       "range": {
-        "start": 23, 
-        "end": 29
+        "start": 18, 
+        "end": 26
       }, 
-      "rawValue": "denver", 
+      "rawValue": "colorado", 
       "value": {
         "kind": "Custom", 
-        "value": "denver"
+        "value": "Colorado"
       }, 
-      "entity": "city"
+      "entity": "state"
     }
   ], 
   "intent": {
     "intentName": "weather", 
-    "probability": 0.8540319543594539
+    "probability": 0.8849684764281238
   }
 }

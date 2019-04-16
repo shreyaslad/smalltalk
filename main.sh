@@ -10,6 +10,12 @@ main () {
         echo "{ \"input\": \"$input\" }" >> ./chatbot/data/input.json
         #can call python ./chatbot/main.py here
         python main.py
+        
+        intent=$(cat ./chatbot/data/output.json | jq '.intent.intentName')
+        echo "$intent"
+        #add grep if statement here
+        output=$(cat ./chatbot/data/output.json | jq '.slots[0].rawValue')
+        echo "$output"
         if [[ "$input" == "help()" ]];
         then
             ./scripts/help.sh

@@ -23,7 +23,7 @@ with io.open("./chatbot/data/dataset.json") as f:
 
 engine.fit(dataset)
 parsing = engine.parse(u"%s" % input)
-print(json.dumps(parsing, indent=2))
+'''print(json.dumps(parsing, indent=2))''' #we don't want something to print to the terminal
 
 file = open("./chatbot/data/output.json", "w")
 file.write(json.dumps(parsing, indent=2))
