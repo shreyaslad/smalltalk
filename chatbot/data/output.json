@@ -1,22 +1,22 @@
 {
-  "input": "what's the weather in dublin ca?", 
+  "input": "tell me the weather in denver", 
   "slots": [
     {
-      "slotName": "state", 
+      "slotName": "city", 
       "range": {
-        "start": 29, 
-        "end": 31
+        "start": 23, 
+        "end": 29
       }, 
-      "rawValue": "ca", 
+      "rawValue": "denver", 
       "value": {
         "kind": "Custom", 
-        "value": "California"
+        "value": "denver"
       }, 
-      "entity": "state"
+      "entity": "city"
     }
   ], 
   "intent": {
     "intentName": "weather", 
-    "probability": 0.8760557171534977
+    "probability": 0.8540319543594539
   }
 }
