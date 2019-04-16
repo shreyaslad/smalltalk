@@ -13,6 +13,13 @@ main () {
         
         intent=$(cat ./chatbot/data/output.json | jq '.intent.intentName')
         echo "$intent"
+        if [[ "$intent" == "\"weather\"" ]];
+        then
+            city=$(cat ./chatbot/data/output.json | jq '.[]')
+            echo "$city"
+            
+            #inset state check and assign to variable
+        fi
         #add grep if statement here
         output=$(cat ./chatbot/data/output.json | jq '.slots[0].rawValue')
         echo "$output"
@@ -31,7 +38,7 @@ main () {
         fi
     fi
     main
-}
+}2
 
 #I have no idea why this function works, but it does, so here it shall stay
 keep() {
