@@ -31,11 +31,11 @@ That's all! Typing in `./main` will bring up a prompt. You can exit this prompt 
     - [x] help()
     - [x] exit()
     - [x] version()
-- [ ] Training
-    - [ ] create training dataset for intents (may split up into different files)
-    - [ ] sync dataset to python code
+- [x] Training
+    - [x] create training dataset for intents (may split up into different files)
+    - [x] sync dataset to python code
 - [ ] Working with Data
-    - [ ] transfer utterances to a file
+    - [ ] transfer utterance to a file
     - [ ] read utterance from file
     - [ ] shift utterance to python code
     - [ ] make prediction in python (can run from bash)
