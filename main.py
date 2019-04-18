@@ -4,7 +4,7 @@ from snips_nlu import SnipsNLUEngine
 
 nlu_engine = SnipsNLUEngine()
 
-with open("./data/input.json") as input_file:
+with open("./chatbot/data/input.json") as input_file:
     input_dict = json.load(input_file)
 
 input = input_dict['input']

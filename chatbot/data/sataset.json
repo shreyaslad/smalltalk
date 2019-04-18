@@ -1,0 +1,198 @@
+{
+  "entities": {
+    "city": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "dublin"
+        },
+        {
+          "synonyms": [
+            "sf",
+            "SF",
+            "Sf"
+          ],
+          "value": "San Francisco"
+        },
+        {
+          "synonyms": [
+            "ny",
+            "NY",
+            "new york"
+          ],
+          "value": "New York"
+        },
+        {
+          "synonyms": [],
+          "value": "denver"
+        },
+        {
+          "synonyms": [],
+          "value": "salt lake city"
+        },
+        {
+          "synonyms": [],
+          "value": "portland"
+        },
+        {
+          "synonyms": [],
+          "value": "boise"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "state": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [
+            "California",
+            "CA",
+            "ca"
+          ],
+          "value": "california"
+        },
+        {
+          "synonyms": [
+            "OR"
+          ],
+          "value": "oregon"
+        },
+        {
+          "synonyms": [
+            "CO"
+          ],
+          "value": "colorado"
+        },
+        {
+          "synonyms": [],
+          "value": "idaho"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "weather": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "tell me the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "dublin"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "entity": "state",
+              "slot_name": "state",
+              "text": "california"
+            },
+            {
+              "text": "ca"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what's the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "denver"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "entity": "state",
+              "slot_name": "state",
+              "text": "co"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what's the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "dublin"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "state",
+              "slot_name": "state",
+              "text": "california"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "tell me the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "dublin"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show me the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "San Francisco"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "i would like to know the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "San Francisco"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "state",
+              "slot_name": "state",
+              "text": "California"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

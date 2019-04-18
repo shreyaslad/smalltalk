@@ -1,22 +1,35 @@
 {
-  "input": "weather in dublin ca", 
+  "input": "what's the weather in portland oregon", 
   "slots": [
+    {
+      "slotName": "city", 
+      "range": {
+        "start": 22, 
+        "end": 30
+      }, 
+      "rawValue": "portland", 
+      "value": {
+        "kind": "Custom", 
+        "value": "portland"
+      }, 
+      "entity": "city"
+    }, 
     {
       "slotName": "state", 
       "range": {
-        "start": 18, 
-        "end": 20
+        "start": 31, 
+        "end": 37
       }, 
-      "rawValue": "ca", 
+      "rawValue": "oregon", 
       "value": {
         "kind": "Custom", 
-        "value": "California"
+        "value": "oregon"
       }, 
       "entity": "state"
     }
   ], 
   "intent": {
     "intentName": "weather", 
-    "probability": 0.9192938136571691
+    "probability": 0.9063237057298559
   }
 }
