@@ -1,35 +1,22 @@
 {
-  "input": "what's the weather in portland oregon", 
+  "input": "show me the weather for mumbai", 
   "slots": [
     {
       "slotName": "city", 
       "range": {
-        "start": 22, 
+        "start": 24, 
         "end": 30
       }, 
-      "rawValue": "portland", 
+      "rawValue": "mumbai", 
       "value": {
         "kind": "Custom", 
-        "value": "portland"
+        "value": "mumbai"
       }, 
       "entity": "city"
-    }, 
-    {
-      "slotName": "state", 
-      "range": {
-        "start": 31, 
-        "end": 37
-      }, 
-      "rawValue": "oregon", 
-      "value": {
-        "kind": "Custom", 
-        "value": "oregon"
-      }, 
-      "entity": "state"
     }
   ], 
   "intent": {
     "intentName": "weather", 
-    "probability": 0.9063237057298559
+    "probability": 0.7730150422347507
   }
 }

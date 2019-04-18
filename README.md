@@ -40,10 +40,17 @@ That's all! Typing in `./main` will bring up a prompt. You can exit this prompt 
     - [x] shift utterance to python code
     - [x] make prediction in python (can run from bash)
     - [x] shift data to file
-- [ ] Actually doing something
-    - [ ] read from file
-    - [ ] check intent and all entities
-    - [ ] hardcode events based on that information
+- [ ] Weather
+    - [ ] read from output file
+    - [ ] check whether either only city entity or both city and state entities exist
+        - [ ] if only state exists, return error to user
+    - [ ] grab api key from .env file
+    - [ ] Yahoo Weather API
+        - [ ] make GET request with cURL
+        - [ ] parse appropriate data with jq
+        - [ ] store data in variables
+        - [ ] create concatenated string and present to user
+- [ ] Implement other commands (coming soon)
 
 ## Known Bugs
 - [x] commands not working after blank input
