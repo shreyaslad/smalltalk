@@ -17,9 +17,7 @@ main () {
         if [[ "$intent" == "\"weather\"" ]];
         then
             city=$(cat ./chatbot/data/output.json | jq '.[]')
-            echo "$city"
             state=$(cat ./chatbot/data/output.json | jq '.[]')
-            echo "$state"
             #read API key from .env file
             #make cURL to Yahoo Weather API
         fi

@@ -1,7 +1,7 @@
 {
   "entities": {
     "city": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [
         {
           "synonyms": [],
@@ -11,25 +11,10 @@
           "synonyms": [
             "sf",
             "SF",
-            "Sf"
+            "Sf",
+            "san francisco"
           ],
           "value": "San Francisco"
-        },
-        {
-          "synonyms": [
-            "ny",
-            "NY",
-            "new york"
-          ],
-          "value": "New York"
-        },
-        {
-          "synonyms": [],
-          "value": "denver"
-        },
-        {
-          "synonyms": [],
-          "value": "salt lake city"
         },
         {
           "synonyms": [],
@@ -37,38 +22,36 @@
         },
         {
           "synonyms": [],
-          "value": "boise"
+          "value": "denver"
         }
       ],
       "matching_strictness": 1.0,
       "use_synonyms": true
     },
     "state": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [
         {
           "synonyms": [
-            "California",
+            "california",
             "CA",
             "ca"
           ],
-          "value": "california"
+          "value": "California"
         },
         {
           "synonyms": [
-            "OR"
+            "OR",
+            "oregon"
           ],
-          "value": "oregon"
+          "value": "Oregon"
         },
         {
           "synonyms": [
-            "CO"
+            "CO",
+            "colorado"
           ],
-          "value": "colorado"
-        },
-        {
-          "synonyms": [],
-          "value": "idaho"
+          "value": "Colorado"
         }
       ],
       "matching_strictness": 1.0,
@@ -81,35 +64,12 @@
         {
           "data": [
             {
-              "text": "tell me the weather for "
+              "text": "Show me the weather for "
             },
             {
               "entity": "city",
               "slot_name": "city",
-              "text": "dublin"
-            },
-            {
-              "text": ", "
-            },
-            {
-              "entity": "state",
-              "slot_name": "state",
-              "text": "california"
-            },
-            {
-              "text": "ca"
-            }
-          ]
-        },
-        {
-          "data": [
-            {
-              "text": "what's the weather for "
-            },
-            {
-              "entity": "city",
-              "slot_name": "city",
-              "text": "dublin"
+              "text": "Dublin"
             },
             {
               "text": ", "
@@ -124,15 +84,15 @@
         {
           "data": [
             {
-              "text": "what's the weather for "
+              "text": "weather for "
             },
             {
               "entity": "city",
               "slot_name": "city",
-              "text": "San Francisco"
+              "text": "dublin"
             },
             {
-              "text": " "
+              "text": "Dublin "
             },
             {
               "entity": "state",
@@ -144,19 +104,30 @@
         {
           "data": [
             {
-              "text": "tell me the weather for "
+              "text": "weather for "
             },
             {
               "entity": "city",
               "slot_name": "city",
-              "text": "sf"
+              "text": "San Francisco"
+            },
+            {
+              "text": "dublin "
+            },
+            {
+              "entity": "state",
+              "slot_name": "state",
+              "text": "California"
+            },
+            {
+              "text": "california"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "show me the weather for "
+              "text": "Tell me the weather for "
             },
             {
               "entity": "city",
@@ -168,12 +139,24 @@
         {
           "data": [
             {
-              "text": "i would like to know the weather for "
+              "text": "weather for "
             },
             {
               "entity": "city",
               "slot_name": "city",
-              "text": "SF"
+              "text": "sf"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "I want the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "portland"
             },
             {
               "text": " "
@@ -181,7 +164,53 @@
             {
               "entity": "state",
               "slot_name": "state",
-              "text": "ca"
+              "text": "oregon"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can you tell me the weather for "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "denver"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "state",
+              "slot_name": "state",
+              "text": "co"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what's the weather in "
+            },
+            {
+              "entity": "city",
+              "slot_name": "city",
+              "text": "denver"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "state",
+              "slot_name": "state",
+              "text": "colorado"
+            },
+            {
+              "text": "?"
             }
           ]
         }

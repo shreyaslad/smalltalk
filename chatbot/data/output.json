@@ -1,22 +1,22 @@
 {
-  "input": "weather in denver colorado", 
+  "input": "weather in dublin ca", 
   "slots": [
     {
       "slotName": "state", 
       "range": {
         "start": 18, 
-        "end": 26
+        "end": 20
       }, 
-      "rawValue": "colorado", 
+      "rawValue": "ca", 
       "value": {
         "kind": "Custom", 
-        "value": "Colorado"
+        "value": "California"
       }, 
       "entity": "state"
     }
   ], 
   "intent": {
     "intentName": "weather", 
-    "probability": 0.8849684764281238
+    "probability": 0.9192938136571691
   }
 }

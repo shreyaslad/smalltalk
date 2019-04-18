@@ -1,41 +1,35 @@
-# weather intent
----
 type: intent
-name:  weather
+name: weather
 slots:
   - name: city
     entity: city
   - name: state
     entity: state
-  #Removed until proper bash integration
-  #- name: time
-  #  entity: snips/datetime
 utterances:
-  - Show me the weather for [city](Dublin), [state](California)
-  - weather for [city]Dublin [state](CA)
-  - Tell me the weather for [city](San Francisco)
-  - weather for [city](sf)
-  - I want the weather for [city](portland) [state](oregon)
-  - Can you tell me the weather for [city](denver) [state](co)?
-  - what's the weather in [city](denver) [state](colorado)?
+  - tell me the weather for [city](dublin), [state]ca
+  - what's the weather for [city], [state]
+  - what's the weather for [city] [state]
+  - tell me the weather for [city]
+  - show me the weather for [city](San Francisco)
+  - i would like to know the weather for [city] [state]
 
-#city entity
 ---
 type: entity
 name: city
-automatically_extensible: no
 values:
-- dublin
-- [San Francisco, sf, SF, Sf, san francisco]
-- portland
-- denver
+  - dublin
+  - [San Francisco, sf, SF, Sf]
+  - [New York, ny, NY, new york]
+  - denver
+  - salt lake city
+  - portland
+  - boise
 
-#state entity
 ---
 type: entity
 name: state
-automatically_extensible: no
 values:
-- [California, california, CA, ca]
-- [Oregon, OR, oregon]
-- [Colorado, CO, colorado]
+  - [california, California, CA, ca]
+  - [oregon, OR]
+  - [colorado, CO]
+  - idaho
