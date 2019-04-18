@@ -41,7 +41,7 @@ main () {
         fi
     fi
     main
-}2
+}
 
 #I have no idea why this function works, but it does, so here it shall stay
 keep() {
