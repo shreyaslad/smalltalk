@@ -50,6 +50,7 @@ That's all! Typing in `./main` will bring up a prompt. You can exit this prompt 
         - [ ] parse appropriate data with jq
         - [ ] store data in variables
         - [ ] create concatenated string and present to user
+- [ ] Adding basic conversations (going to be hard)
 - [ ] Implement other commands (coming soon)
 
 ## Known Bugs
