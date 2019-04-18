@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 main () {
     printf ">>> "
     read input
@@ -17,8 +18,10 @@ main () {
         then
             city=$(cat ./chatbot/data/output.json | jq '.[]')
             echo "$city"
-            
-            #inset state check and assign to variable
+            state=$(cat ./chatbot/data/output.json | jq '.[]')
+            echo "$state"
+            #read API key from .env file
+            #make cURL to Yahoo Weather API
         fi
         #add grep if statement here
         output=$(cat ./chatbot/data/output.json | jq '.slots[0].rawValue')
